@@ -1,77 +1,100 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <title>Ingresar nombre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATUAJES - SLAG ART</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
-<h2>MI TRABAJO EN SLAG TATTOO</h2>
+    <h2>MI TRABAJO EN SLAG TATTOO</h2>
 
-<p>Conoce nuestro trabajo y calidad
-en cada tatuaje.</p>
+    <p>Conoce nuestro trabajo y calidad en cada tatuaje.</p>
 
-<div class="video-contenedor">
-    <video controls>
-        <source src="videos/tatuando.mp4.mp4" type="video/mp4">
-    </video>
-</div>
-
-
-<h2>ESTILOS DE TATUAJES - SLAG</h2>
-<h2>NUESTROS ESTILOS</h2>
-  <ul id="listaCatalogo"></ul>
-
-<button id="btnEstilo">Ver estilo</button>
-
-<div class="galeria">
-
-    <div>
-        <h3>Blackwork</h3>
-    <div class="diseno-tatuaje">
-    <img src="imagenes/black.png" alt="Diseño de tatuaje">
- <img src="imagenes/black1.png" alt="Diseño de tatuaje">
-  <img src="imagenes/black2.png" alt="Diseño de tatuaje">
-   <img src="imagenes/black3.png" alt="Diseño de tatuaje">
-    <img src="imagenes/black4.png" alt="Diseño de tatuaje">
-     <img src="imagenes/black5.png" alt="Diseño de tatuaje">
-    <button class="btn-me-gusta" onclick="darMeGusta(this)">
-        ❤️ Me gusta <span>0</span>
-    </button>
-</div>
-
-    <div>
-        <h3>Lettering</h3>
- <div class="diseno-tatuaje">
-        <img src="imagenes/lettering.png" width="200">
-    <img src="imagenes/let1.png" alt="Diseño de tatuaje">
- <img src="imagenes/let2.png" alt="Diseño de tatuaje">
-  <img src="imagenes/let3.png" alt="Diseño de tatuaje">
-   <img src="imagenes/let4.png" alt="Diseño de tatuaje">
-    <img src="imagenes/let5.png" alt="Diseño de tatuaje">
-    <button class="btn-me-gusta" onclick="darMeGusta(this)">
-        ❤️ Me gusta <span>0</span>
-    </button>
+    <div class="video-contenedor">
+        <video controls>
+            <source src="videos/tatuando.mp4.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <div>
-        <h3>Realismo</h3>
-        <div class="diseno-tatuaje">
-  <img src="imagenes/realismo.png" width="200">
-    <img src="imagenes/realismo1.png" alt="Diseño de tatuaje">
- <img src="imagenes/realismo2.png" alt="Diseño de tatuaje">
-  <img src="imagenes/realismo3.png" alt="Diseño de tatuaje">
-   <img src="imagenes/realismo4.png" alt="Diseño de tatuaje">
-    <img src="imagenes/realimo5.png" alt="Diseño de tatuaje">
-    <button class="btn-me-gusta" onclick="darMeGusta(this)">
-        ❤️ Me gusta <span>0</span>
-    </button>
+    <h2>ESTILOS DE TATUAJES - SLAG</h2>
+    <h2>NUESTROS ESTILOS</h2>
+
+    <label for="estiloTatuaje">Selecciona un estilo:</label>
+
+    <select id="estiloTatuaje">
+        <option value="">Selecciona un estilo</option>
+        <option value="blackwork">Blackwork</option>
+        <option value="lettering">Lettering</option>
+        <option value="realismo">Realismo</option>
+        <option value="tribal">Tribal</option>
+        <option value="oldschool">Old School</option>
+        <option value="fineline">Fine Line</option>
+    </select>
+
+    <button type="button" id="btnEstilo">Ver estilo</button>
+
+    <p id="resultadoEstilo"></p>
+
+    <div class="galeria">
+
+        <div>
+            <h3>Blackwork</h3>
+            <div class="diseno-tatuaje">
+                <img src="imagenes/black.png" alt="Blackwork">
+                <img src="imagenes/black1.png" alt="Blackwork">
+                <img src="imagenes/black2.png" alt="Blackwork">
+                <img src="imagenes/black3.png" alt="Blackwork">
+                <img src="imagenes/black4.png" alt="Blackwork">
+                <img src="imagenes/black5.png" alt="Blackwork">
+
+                <button type="button" class="btn-me-gusta" onclick="darMeGusta(this)">
+                    ❤️ Me gusta <span>0</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Lettering</h3>
+            <div class="diseno-tatuaje">
+                <img src="imagenes/lettering.png" alt="Lettering">
+                <img src="imagenes/let1.png" alt="Lettering">
+                <img src="imagenes/let2.png" alt="Lettering">
+                <img src="imagenes/let3.png" alt="Lettering">
+                <img src="imagenes/let4.png" alt="Lettering">
+                <img src="imagenes/let5.png" alt="Lettering">
+
+                <button type="button" class="btn-me-gusta" onclick="darMeGusta(this)">
+                    ❤️ Me gusta <span>0</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Realismo</h3>
+            <div class="diseno-tatuaje">
+                <img src="imagenes/realismo.png" alt="Realismo">
+                <img src="imagenes/realismo1.png" alt="Realismo">
+                <img src="imagenes/realismo2.png" alt="Realismo">
+                <img src="imagenes/realismo3.png" alt="Realismo">
+                <img src="imagenes/realismo4.png" alt="Realismo">
+                <img src="imagenes/realimo5.png" alt="Realismo">
+
+                <button type="button" class="btn-me-gusta" onclick="darMeGusta(this)">
+                    ❤️ Me gusta <span>0</span>
+                </button>
+            </div>
+        </div>
+
     </div>
 
-<p id="resultadoEstilo"></p>
-<a href="inicio.html">Volver al inicio</a>
- <script src="js/script.js"></script>
+    <a href="inicio.html">Volver al inicio</a>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

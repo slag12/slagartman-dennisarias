@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <title>Ingresar nombre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>SLAG Barber Shop</title>
 </head>
 <body>
 
-    <h1>BIENVENIDO a SLAG ART</h1>
-<section>
-<section id="barberia">
+    <h1>BIENVENIDO A SLAG ART</h1>
 
-    <h2>SLAG BARBER SHOP</h2>
-    <p>Tu estilo, nuestra pasión.</p>
+    <section id="barberia">
+        <h2>SLAG BARBER SHOP</h2>
+        <p>Tu estilo, nuestra pasión.</p>
 
-    <h3>NUESTROS SERVICIOS</h3>
+        <h3>NUESTROS SERVICIOS</h3>
 
-    <select id="servicioBarberia">
-        <option value="">Selecciona un servicio</option>
-        <option value="5">Corte clásico - $5</option>
-        <option value="7">Corte degradado - $7</option>
-        <option value="3">Arreglo de barba - $3</option>
-        <option value="10">Corte y barba - $10</option>
-        <option value="4">Diseño de cejas - $4</option>
-    </select>
-<section>
+        <select id="servicioBarberia">
+            <option value="">Selecciona un servicio</option>
+            <option value="5">Corte clásico - $5</option>
+            <option value="7">Corte degradado - $7</option>
+            <option value="3">Arreglo de barba - $3</option>
+            <option value="10">Corte y barba - $10</option>
+            <option value="4">Diseño de cejas - $4</option>
+        </select>
 
-    <h2>Mi catálogo</h2>
+        <br><br>
 
-    <button id="btnCatalogo">Ver catálogo</button>
+        <button id="btnBarberia">Consultar precio</button>
+        <p id="resultadoBarberia"></p>
+    </section>
 
-    <ul id="listaCatalogo"></ul>
 
-</section>
-    <br><br>
+    <section>
+        <h2>CALCULADORA DE TOTAL</h2>
 
-    <button id="btnBarberia">Consultar precio</button>
+        <input type="number" id="campoPrecio" placeholder="Precio">
 
-    <p id="resultadoBarberia"></p>
+        <input type="number" id="campoCantidad" placeholder="Cantidad">
 
-</section>
-<section>
+        <button id="btnTotal">Calcular</button>
 
-    <h2>Calculadora de total</h2>
+        <p id="resultadoTotal"></p>
+    </section>
 
-    <input type="text" id="campoPrecio" placeholder="Precio">
+    <br>
 
-    <input type="text" id="campoCantidad" placeholder="Cantidad">
+    <a href="inicio.html">Volver a SLAG</a>
 
-    <button id="btnTotal">Calcular</button>
-
-    <p id="resultadoTotal"></p>
-
-</section>
-<a href="inicio.html">Volver a SLAG</a>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -2,69 +2,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <title>SLAG ART SHOP  </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLAG ART SHOP</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-      <h1>BIENVENIDO a SLAG ART</h1>
-<section>
 
-<section id="Productos">
+    <h1>BIENVENIDO A SLAG ART</h1>
 
-    <h2>SLAG ART SHOP</h2>
+    <section id="Productos">
 
-    <div class="tienda-contenedor">
+        <h2>SLAG ART SHOP</h2>
 
-        <!-- PRODUCTOS -->
-        <div class="zona-productos">
+        <div class="tienda-contenedor">
 
-            <div class="buscador">
-                <input type="text" id="campoBuscar"
-                    placeholder="Buscar producto...">
+            <div class="zona-productos">
 
-                <select id="selCategoria">
-                    <option value="todas">Todas las categorías</option>
-                    <option value="Ropa">Ropa</option>
-                    <option value="Vapes">Vapeo</option>
-                    <option value="Accesorios">Accesorios</option>
-                    <option value="Calzado">Calzado</option>
-                </select>
+                <div class="buscador">
 
-                <button id="btnFiltrar">Buscar</button>
+                    <input type="text" id="campoBuscar"
+                        placeholder="Buscar producto...">
+
+                    <select id="selCategoria">
+                        <option value="todas">Todas las categorías</option>
+                        <option value="Ropa">Ropa</option>
+                        <option value="Vapeo">Vapeo</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Calzado">Calzado</option>
+                    </select>
+
+                    <button type="button" id="btnFiltrar">Buscar</button>
+
+                </div>
+
+                <ul id="listaProductos" class="productos-grid"></ul>
+
             </div>
 
-            <ul id="listaProductos" class="productos-grid"></ul>
+            <aside class="carrito-panel">
+
+                <h2>🛒 Mi carrito</h2>
+
+                <p id="textoCarrito">El carrito está vacío.</p>
+
+                <ul id="listaCarrito"></ul>
+
+                <div class="total-compra">
+                    <h3>Total:</h3>
+                    <h2>$<span id="totalCarrito">0.00</span></h2>
+                </div>
+
+                <button type="button" id="btnVaciar">
+                    Vaciar carrito
+                </button>
+
+                <button type="button" id="btnComprar"
+                    onclick="finalizarCompra()">
+                    FINALIZAR COMPRA
+                </button>
+
+                <p id="mensajeCompra"></p>
+
+            </aside>
 
         </div>
 
-        <!-- CARRITO -->
-        <aside class="carrito-panel">
+    </section>
 
-            <h2>🛒 Mi carrito</h2>
+    <a href="inicio.html">Volver a SLAG</a>
 
-            <p id="textoCarrito">El carrito está vacío.</p>
+    <script src="js/script.js"></script>
 
-            <ul id="listaCarrito"></ul>
-
-            <div class="total-compra">
-                <h3>Total:</h3>
-                <h2>$<span id="totalCarrito">0.00</span></h2>
-            </div>
-
-            <button id="btnVaciar">Vaciar carrito</button>
-
-           <button id="btnComprar" onclick="finalizarCompra()">
-    FINALIZAR COMPRA
-</button>
-
-<p id="Muchas gracias por confiar en Slag, te esperamos vuelve pronto"></p>
-
-        </aside>
-
-    </div>
-</section>
-<a href="inicio.html">Volver a SLAG</a>
-<script src="js/script.js"></script>
 </body>
 </html>
+
