@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>SLAG Barber Shop</title>
+</head>
+<body>
+
+    <h1>BIENVENIDO A SLAG ART</h1>
+
+    <section id="barberia">
+        <h2>SLAG BARBER SHOP</h2>
+        <p>Tu estilo, nuestra pasión.</p>
+
+        <h3>NUESTROS SERVICIOS</h3>
+
+        <select id="servicioBarberia">
+            <option value="">Selecciona un servicio</option>
+            <option value="5">Corte clásico - $5</option>
+            <option value="7">Corte degradado - $7</option>
+            <option value="3">Arreglo de barba - $3</option>
+            <option value="10">Corte y barba - $10</option>
+            <option value="4">Diseño de cejas - $4</option>
+        </select>
+
+        <br><br>
+
+        <button id="btnBarberia">Consultar precio</button>
+        <p id="resultadoBarberia"></p>
+    </section>
+
+
+    <section>
+        <h2>CALCULADORA DE TOTAL</h2>
+
+        <input type="number" id="campoPrecio" placeholder="Precio">
+
+        <input type="number" id="campoCantidad" placeholder="Cantidad">
+
+        <button id="btnTotal">Calcular</button>
+
+        <p id="resultadoTotal"></p>
+    </section>
+
+    <br>
+
+    <a href="inicio.html">Volver a SLAG</a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
