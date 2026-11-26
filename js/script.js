@@ -137,7 +137,7 @@ const productos = [
         nombre: "Camiseta",
         precio: 20.50,
         categoria: "Ropa",
-        foto: "imagenes/camiseta.png"
+        foto: "Imagenes/camiseta.png"
     },
 
     {
@@ -145,7 +145,7 @@ const productos = [
         nombre: "Gorra",
         precio: 15,
         categoria: "Ropa",
-        foto: "imagenes/gorras.png"
+        foto: "Imagenes/gorras.png"
     },
 
     {
@@ -153,7 +153,7 @@ const productos = [
         nombre: "Cadenas",
         precio: 25,
         categoria: "Accesorios",
-        foto: "imagenes/cadena.png"
+        foto: "Imagenes/cadena.png"
     },
 
     {
@@ -161,7 +161,7 @@ const productos = [
         nombre: "Zapatos",
         precio: 50,
         categoria: "Calzado",
-        foto: "imagenes/nike.png"
+        foto: "Imagenes/nike.png"
     },
 
     {
@@ -169,7 +169,7 @@ const productos = [
         nombre: "Joyería",
         precio: 10,
         categoria: "Accesorios",
-        foto: "imagenes/aretes.png"
+        foto: "Imagenes/aretes.png"
     },
 
     {
@@ -177,7 +177,7 @@ const productos = [
         nombre: "Vapes",
         precio: 15,
         categoria: "Vapeo",
-        foto: "imagenes/vape.png"
+        foto: "Imagenes/vape.png"
     }
 
 ];
